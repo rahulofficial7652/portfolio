@@ -32,8 +32,17 @@ const About = () => {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-lg text-muted-foreground text-center leading-relaxed">
-                I am a dedicated Java Backend Developer with a strong foundation in building and maintaining high-performance, scalable, and reliable server-side applications. With expertise in the Spring ecosystem and a commitment to writing clean, production-ready code, I enjoy tackling complex challenges and contributing to impactful projects. I am a collaborative team player, always eager to learn and adapt to new technologies.
+              <p className="text-lg text-muted-foreground text-center leading-relaxed text-justify">
+                I’m a <b>Backend Developer</b> skilled in building reliable, scalable, and production-ready systems. I work with <b>Node.js</b> and <b>Java/Spring Boot</b>, and I’m comfortable designing clean APIs, writing efficient code, and solving complex problems using <b>DSA</b>.
+              </p>
+              <p className="text-lg text-muted-foreground text-center leading-relaxed text-justify">
+                I have hands-on experience with multiple databases including <b>PostgreSQL</b>, <b>MongoDB</b>, and <b>MySQL</b>, and I enjoy structuring data, optimizing queries, and designing robust backend architectures.
+              </p>
+              <p className="text-lg text-muted-foreground text-center leading-relaxed text-justify">
+                Along with backend development, I’m also improving my <b>system design</b>, writing clean code, and following best practices for modern backend engineering.
+              </p>
+              <p className="text-lg text-muted-foreground text-center leading-relaxed text-justify">
+                My long-term goal is to grow as a <b>full-stack backend engineer</b> who can build high-performance systems end to end.
               </p>
             </CardContent>
           </Card>

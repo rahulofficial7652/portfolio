@@ -48,7 +48,7 @@ export default function Navbar() {
       <div className="container mx-auto flex h-16 items-center justify-between px-6">
         <Link href="/" className="flex items-center gap-2">
           <Code2 className="h-8 w-8 text-primary" />
-          <span className="text-xl font-bold font-headline">DevfolioX</span>
+          <span className="text-xl font-bold font-headline">Rahul</span>
         </Link>
         <div className="flex items-center gap-2">
           {!isMobile && (
@@ -68,7 +68,7 @@ export default function Navbar() {
               <SheetContent side="right">
                  <Link href="/" className="flex items-center gap-2 mb-8">
                     <Code2 className="h-8 w-8 text-primary" />
-                    <span className="text-xl font-bold font-headline">DevfolioX</span>
+                    <span className="text-xl font-bold font-headline">Rahul</span>
                 </Link>
                 <nav className="flex flex-col gap-4 text-lg">
                   <NavItems />

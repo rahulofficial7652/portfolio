@@ -7,16 +7,16 @@ export type Achievement = {
 
 export const achievements: Achievement[] = [
   {
-    title: 'Senior Java Developer',
-    issuer: 'Tech Solutions Inc.',
-    date: '2021 - Present',
-    description: 'Led the development of a high-traffic microservices-based e-commerce platform. Mentored junior developers and improved code quality and test coverage.',
+    title: 'AccioJob full stack developer',
+    issuer: 'AccioJob',
+    date: '2025 - Present',
+    description: 'I am currently enrolled in the AccioJob full stack developer program and I am learning to build full stack web applications.',
   },
   {
-    title: 'Java Developer',
-    issuer: 'Innovate Systems',
-    date: '2018 - 2021',
-    description: 'Developed and maintained backend services for a financial analytics application using Spring Boot and Hibernate. Contributed to API design and database optimization.',
+    title: 'AccioJob Java Developer',
+    issuer: 'AccioJob',
+    date: '2025 - Present',
+    description: 'I am currently enrolled in the AccioJob full stack developer program and I am learning to build full stack web applications.',
   },
   {
     title: 'Bachelor of Science in Computer Science',

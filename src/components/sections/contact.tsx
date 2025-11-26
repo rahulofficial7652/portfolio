@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { ContactForm } from '@/components/contact-form';
-import { Github, Linkedin, Mail, Twitter } from 'lucide-react';
+import { Github, Instagram, Linkedin, Mail, Twitter } from 'lucide-react';
 
 const Contact = () => {
   const { ref, inView } = useInView({
@@ -43,19 +43,18 @@ const Contact = () => {
                   <div className="space-y-4">
                     <div className="flex items-center gap-4">
                       <Mail className="h-6 w-6 text-primary" />
-                      <a href="mailto:jane.doe@example.com" className="hover:text-primary transition-colors">jane.doe@example.com</a>
+                      <a href="mailto:rahulofficial7652@gmail.com" className="hover:text-primary transition-colors">rahulofficial7652@gmail.com</a>
                     </div>
                      <div className="flex items-center gap-4">
                       <Linkedin className="h-6 w-6 text-primary" />
-                      <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">linkedin.com/in/janedoe-dev</a>
+                      <a href="https://www.linkedin.com/in/rahul-rahul-807435370" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">www.linkedin.com/in/rahul-rahul-807435370</a>
                     </div>
                      <div className="flex items-center gap-4">
                       <Github className="h-6 w-6 text-primary" />
-                      <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">github.com/janedoe-dev</a>
+                      <a href="https://github.com/rahulofficial7652" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">github.com/rahulofficial7652</a>
                     </div>
                      <div className="flex items-center gap-4">
-                      <Twitter className="h-6 w-6 text-primary" />
-                      <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">twitter.com/janedoe_dev</a>
+                     
                     </div>
                   </div>
                 </div>
