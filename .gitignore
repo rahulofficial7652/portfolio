@@ -1,0 +1,90 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+.pnp.cjs
+
+# Build output
+.next/
+out/
+dist/
+build/
+
+# Next.js cache
+.next/cache/
+.next/static/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+bun-debug.log*
+debug.log
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Local env files
+*.local
+.env.local
+.env.development.local
+.env.production.local
+.env.test.local
+
+# Typescript build cache
+*.tsbuildinfo
+
+# VSCode settings (optional)
+.vscode/
+
+# SvelteKit / Vercel / Misc
+.vercel/
+firebase-debug.log
+functions/node_modules/
+
+# Lockfiles (optional — keep if using a specific package manager)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+# bun.lockb
+
+# Coverage reports
+coverage/
+
+# Bun
+.bun/
+
+# Temp files
+tmp/
+temp/
+*.tmp
+*.cache
+
+# Static exports
+export/
+
+# Uploaded Files
+public/uploads/*
+!public/uploads/.gitkeep
+
+# Tar/Zip/Backup files (large files avoid)
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.rar
+
+# Generated Images
+public/generated/
+
+# Prisma
+prisma/*.db
+prisma/migrations/
