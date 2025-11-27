@@ -66,11 +66,11 @@ const Hero = () => {
           >
              <div className="relative w-60 h-60 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
                 <Image
-                  src="https://placehold.co/400x400.png"
+                  src="/image.jpg"
                   alt="Profile Photo"
-                  fill
-                  className="rounded-full shadow-2xl border-4 border-primary/10 object-cover"
-                  data-ai-hint="woman portrait"
+                  fill 
+                  className="rounded-full shadow-2xl border-4 border-primary/10 object-cover object-[50%_25%] rotate-1"
+                  data-ai-hint="man portrait"
                 />
              </div>
           </motion.div>
