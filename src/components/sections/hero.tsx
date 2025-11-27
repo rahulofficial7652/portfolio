@@ -47,7 +47,7 @@ const Hero = () => {
             </motion.p>
             <motion.div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4" variants={itemVariants}>
               <Button size="lg" className="w-full sm:w-auto" asChild>
-                <a href="/resume.pdf" download>
+                <a href="https://drive.google.com/file/d/1OffKjRUHyZfJIhzkno9BJnJTVEw2u6cR/view?usp=sharing" download target="_blank">
                   <Download className="mr-2 h-5 w-5" /> Download Resume
                 </a>
               </Button>

@@ -9,7 +9,6 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import React from 'react';
-import emailjs from '@emailjs/browser';
 
 const formSchema = z.object({
   name: z.string().min(2, {
@@ -26,7 +25,7 @@ const formSchema = z.object({
 export function ContactForm() {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = React.useState(false);
-  const formRef = React.useRef<HTMLFormElement>(null);
+  // const formRef = React.useRef<HTMLFormElement>(null); // Not needed for JSON fetch
   
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -40,27 +39,17 @@ export function ContactForm() {
   async function onSubmit(values: z.infer<typeof formSchema>) {
     setIsSubmitting(true);
     
-    const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
-    const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
-    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
-
-    if (!serviceId || !templateId || !publicKey) {
-      console.error('EmailJS environment variables not set!');
-      toast({
-        title: 'Configuration Error',
-        description: 'The email service is not configured correctly.',
-        variant: 'destructive',
-      });
-      setIsSubmitting(false);
-      return;
-    }
-
     try {
-      if(formRef.current) {
-        // The `sendForm` function from EmailJS needs the form element reference.
-        await emailjs.sendForm(serviceId, templateId, formRef.current, publicKey);
-      } else {
-        throw new Error("Form reference is not available.");
+      const response = await fetch('/api/send', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(values),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to send message');
       }
 
       toast({
@@ -82,7 +71,7 @@ export function ContactForm() {
 
   return (
     <Form {...form}>
-      <form ref={formRef} onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
         <FormField
           control={form.control}
           name="name"

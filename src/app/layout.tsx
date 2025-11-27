@@ -5,7 +5,7 @@ import {ThemeProvider} from '@/components/theme-provider';
 import {Toaster} from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'DevfolioX',
+  title: 'Rahul',
   description: 'A modern portfolio for developers.',
 };
 
