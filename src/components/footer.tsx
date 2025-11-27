@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
 
   return (
     <footer className="bg-card border-t border-border">
-      <div className="container mx-auto px-6 py-6 flex flex-col sm:flex-row justify-between items-center">
+      <div className="container mx-auto px-4 sm:px-6 py-6 flex flex-col sm:flex-row justify-between items-center">
         <p className="text-sm text-muted-foreground mb-4 sm:mb-0">
           &copy; {currentYear} Rahul. All Rights Reserved.
         </p>

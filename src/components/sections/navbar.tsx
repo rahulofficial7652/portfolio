@@ -45,10 +45,10 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container mx-auto flex h-16 items-center justify-between px-6">
+      <div className="container mx-auto flex h-16 items-center justify-between px-4 sm:px-6">
         <Link href="/" className="flex items-center gap-2">
-          <Code2 className="h-8 w-8 text-primary" />
-          <span className="text-xl font-bold font-headline">Rahul</span>
+          <Code2 className="h-6 w-6 sm:h-8 sm:w-8 text-primary" />
+          <span className="text-lg sm:text-xl font-bold font-headline">Rahul</span>
         </Link>
         <div className="flex items-center gap-2">
           {!isMobile && (
@@ -61,14 +61,14 @@ export default function Navbar() {
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon">
-                  <Menu className="h-6 w-6" />
+                  <Menu className="h-5 w-5 sm:h-6 sm:w-6" />
                   <span className="sr-only">Open Menu</span>
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right">
+              <SheetContent side="right" className="w-[300px] sm:w-[400px]">
                  <Link href="/" className="flex items-center gap-2 mb-8">
-                    <Code2 className="h-8 w-8 text-primary" />
-                    <span className="text-xl font-bold font-headline">Rahul</span>
+                    <Code2 className="h-6 w-6 sm:h-8 sm:w-8 text-primary" />
+                    <span className="text-lg sm:text-xl font-bold font-headline">Rahul</span>
                 </Link>
                 <nav className="flex flex-col gap-4 text-lg">
                   <NavItems />

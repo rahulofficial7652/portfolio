@@ -32,7 +32,7 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
     >
       <Card className="flex flex-col h-full overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 bg-card">
         <div className="relative h-48 w-full">
-          <Image src={project.image} alt={project.title} layout="fill" objectFit="cover" data-ai-hint={project.aiHint} />
+          <Image src={project.image} alt={project.title} fill className="object-cover" data-ai-hint={project.aiHint} />
         </div>
         <CardHeader>
           <CardTitle className="font-headline text-xl">{project.title}</CardTitle>
@@ -74,8 +74,8 @@ const Projects = () => {
   };
   
   return (
-    <section id="projects" className="py-20 lg:py-32 bg-secondary">
-      <div className="container mx-auto px-6">
+    <section id="projects" className="py-12 md:py-20 lg:py-32 bg-secondary">
+      <div className="container mx-auto px-4 sm:px-6">
         <motion.div 
             ref={ref}
             initial="hidden"
@@ -83,9 +83,9 @@ const Projects = () => {
             variants={headerVariants}
             transition={{ duration: 0.6 }}
         >
-            <h2 className="text-4xl lg:text-5xl font-headline text-center mb-12">My Projects</h2>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-headline text-center mb-8 md:mb-12">My Projects</h2>
         </motion.div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-8">
           {projects.map((project, index) => (
             <ProjectCard key={index} project={project} index={index} />
           ))}
