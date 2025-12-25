@@ -6,6 +6,7 @@ import Projects from '@/components/sections/projects';
 import Achievements from '@/components/sections/achievements';
 import Contact from '@/components/sections/contact';
 import Footer from '@/components/footer';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export default function Home() {
   return (
