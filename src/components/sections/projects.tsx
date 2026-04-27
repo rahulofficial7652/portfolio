@@ -46,6 +46,9 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
           </div>
         </CardContent>
         <CardFooter className="flex justify-end gap-4">
+          <Button variant="secondary">{project.type}</Button>
+          <div className="flex items-center gap-2">
+            
           <Button variant="outline" asChild>
             <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
               <Github className="mr-2 h-4 w-4" /> GitHub
@@ -56,6 +59,7 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
               <ExternalLink className="mr-2 h-4 w-4" /> Live Demo
             </a>
           </Button>
+          </div>
         </CardFooter>
       </Card>
     </motion.div>

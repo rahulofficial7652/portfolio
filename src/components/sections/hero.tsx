@@ -69,7 +69,7 @@ const Hero = () => {
                   src="/image.jpg"
                   alt="Profile Photo"
                   fill 
-                  className="rounded-full shadow-2xl border-4 border-primary/10 object-cover object-[50%_25%] rotate-1"
+                  className="rounded-full shadow-2xl border-4 border-primary/10 object-cover object-[100%_10%] rotate-5"
                   data-ai-hint="man portrait"
                 />
              </div>

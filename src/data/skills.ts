@@ -1,5 +1,14 @@
 import type { LucideIcon } from 'lucide-react';
-import { Code, Server, Database, GitMerge, Wind, BrainCircuit } from 'lucide-react';
+import {
+  Code,
+  Server,
+  Database,
+  GitMerge,
+  Wind,
+  BrainCircuit,
+  Cloud,
+  Boxes
+} from 'lucide-react';
 
 export type SkillCategory = {
   name: string;
@@ -19,25 +28,28 @@ export const skills: SkillCategory[] = [
       { name: 'Spring Boot', icon: Server },
       { name: 'REST APIs', icon: Server },
       { name: 'MySQL', icon: Database },
-      { name: 'PostgreSQL', icon: Database },
       { name: 'Git & GitHub', icon: GitMerge },
+      { name: 'Next.js', icon: Code },
     ],
   },
   {
     name: 'Secondary Skills',
     skills: [
-      { name: 'Docker', icon: Server },
-      { name: 'Tailwind CSS', icon: Wind },
+      { name: 'PostgreSQL', icon: Database },
+      { name: 'MongoDB', icon: Database },
       { name: 'React', icon: Code },
+      { name: 'Tailwind CSS', icon: Wind },
+      { name: 'Docker', icon: Boxes },
+      { name: 'AWS (Basic)', icon: Cloud },
     ],
   },
   {
-    name: 'Future Learning',
+    name: 'Currently Learning',
     skills: [
-      { name: 'Kubernetes', icon: BrainCircuit },
-      { name: 'AWS', icon: BrainCircuit },
+      { name: 'Microservices', icon: BrainCircuit },
+      { name: 'System Design', icon: BrainCircuit },
       { name: 'Kafka', icon: BrainCircuit },
-      { name: 'Micronaut', icon: BrainCircuit },
+      { name: 'Kubernetes', icon: BrainCircuit },
     ],
   },
 ];

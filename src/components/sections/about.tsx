@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const About = () => {
   const { ref, inView } = useInView({
@@ -21,7 +21,7 @@ const About = () => {
         <motion.div
           ref={ref}
           initial="hidden"
-          animate={inView ? 'visible' : 'hidden'}
+          animate={inView ? "visible" : "hidden"}
           variants={variants}
           transition={{ duration: 0.6 }}
         >
@@ -31,18 +31,36 @@ const About = () => {
                 About Me
               </CardTitle>
             </CardHeader>
+
             <CardContent className="space-y-4">
               <p className="text-base sm:text-lg text-muted-foreground text-center leading-relaxed text-justify">
-                I’m a <b>Backend Developer</b> skilled in building reliable, scalable, and production-ready systems. I work with <b>Node.js</b> and <b>Java/Spring Boot</b>, and I’m comfortable designing clean APIs, writing efficient code, and solving complex problems using <b>DSA</b>.
+                I’m a <b>Backend-Focused Developer</b> passionate about building
+                scalable, efficient, and production-ready applications. I work
+                with <b>Java</b>, <b>Spring Boot</b>, <b>Next.js</b>, and modern
+                web technologies to create practical solutions with clean
+                architecture.
               </p>
+
               <p className="text-base sm:text-lg text-muted-foreground text-center leading-relaxed text-justify">
-                I have hands-on experience with multiple databases including <b>PostgreSQL</b>, <b>MongoDB</b>, and <b>MySQL</b>, and I enjoy structuring data, optimizing queries, and designing robust backend architectures.
+                I have built real-world projects including a{" "}
+                <b>Wedding Album Platform</b> developed with <b>Next.js</b>, and
+                a <b>Multi-Tenant ID Card SaaS</b> system with{" "}
+                <b>Next.js frontend</b> integrated with a{" "}
+                <b>Spring Boot backend</b>.
               </p>
+
               <p className="text-base sm:text-lg text-muted-foreground text-center leading-relaxed text-justify">
-                Along with backend development, I’m also improving my <b>system design</b>, writing clean code, and following best practices for modern backend engineering.
+                I’m comfortable designing <b>REST APIs</b>, handling databases
+                such as <b>MySQL</b>, <b>PostgreSQL</b>, and <b>MongoDB</b>,
+                optimizing queries, and building reliable backend workflows for
+                real business needs.
               </p>
+
               <p className="text-base sm:text-lg text-muted-foreground text-center leading-relaxed text-justify">
-                My long-term goal is to grow as a <b>full-stack backend engineer</b> who can build high-performance systems end to end.
+                Currently, I’m strengthening my{" "}
+                <b>Data Structures & Algorithms</b>, exploring{" "}
+                <b>System Design</b>, and continuously improving as a software
+                engineer who loves solving meaningful problems.
               </p>
             </CardContent>
           </Card>

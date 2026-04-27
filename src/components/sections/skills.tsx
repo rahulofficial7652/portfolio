@@ -71,7 +71,7 @@ const Skills = () => {
               </Card>
             </motion.div>
           ))}
-           <motion.div variants={itemVariants}>
+           {/* <motion.div variants={itemVariants}>
               <Card className="h-full shadow-md hover:shadow-xl transition-shadow duration-300">
                 <CardHeader>
                   <CardTitle className="text-xl sm:text-2xl font-headline text-primary">Future Skills</CardTitle>
@@ -86,7 +86,7 @@ const Skills = () => {
                   </div>
                 </CardContent>
               </Card>
-            </motion.div>
+            </motion.div> */}
         </motion.div>
       </div>
     </section>
